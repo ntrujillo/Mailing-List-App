@@ -6,6 +6,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+using Microsoft.EntityFrameworkCore;
+using ClarkCodingChallenge.DataAccess;
+
 namespace ClarkCodingChallenge
 {
     public class Startup
@@ -29,6 +32,9 @@ namespace ClarkCodingChallenge
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
+            // create database
+            services.AddDbContext<ContactsDataAccess>
+                (opt => opt.UseInMemoryDatabase("ContactsDb"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

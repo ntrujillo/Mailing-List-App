@@ -5,4 +5,13 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.32" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Controllers\Api\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\Api\" />
+  </ItemGroup>
 </Project>

@@ -1,31 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\slieffers\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge.Tests\\ClarkCodingChallenge.Tests.csproj": {}
+    "/Users/ntrujillo/Projects/Mailing-List-App/ClarkCodingChallenge.Tests/ClarkCodingChallenge.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\slieffers\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge.Tests\\ClarkCodingChallenge.Tests.csproj": {
+    "/Users/ntrujillo/Projects/Mailing-List-App/ClarkCodingChallenge.Tests/ClarkCodingChallenge.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\slieffers\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge.Tests\\ClarkCodingChallenge.Tests.csproj",
+        "projectUniqueName": "/Users/ntrujillo/Projects/Mailing-List-App/ClarkCodingChallenge.Tests/ClarkCodingChallenge.Tests.csproj",
         "projectName": "ClarkCodingChallenge.Tests",
-        "projectPath": "C:\\Users\\slieffers\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge.Tests\\ClarkCodingChallenge.Tests.csproj",
-        "packagesPath": "C:\\Users\\slieffers\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\slieffers\\Source\\Repos\\Coding-Challenge\\ClarkCodingChallenge.Tests\\obj\\",
+        "projectPath": "/Users/ntrujillo/Projects/Mailing-List-App/ClarkCodingChallenge.Tests/ClarkCodingChallenge.Tests.csproj",
+        "packagesPath": "/Users/ntrujillo/.nuget/packages/",
+        "outputPath": "/Users/ntrujillo/Projects/Mailing-List-App/ClarkCodingChallenge.Tests/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\slieffers\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/ntrujillo/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "https://nuget.org": {},
-          "https://tfs.clarkinc.biz/DefaultCollection/_packaging/c2aa131e-9bf5-4fdf-9bbe-81bcda5b3920/nuget/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
@@ -62,16 +57,27 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
         }
       }
     }
