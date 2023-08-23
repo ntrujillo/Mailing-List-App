@@ -13,8 +13,8 @@ Requirements:
     *	Email
 *** Completed by adding a add view with simple form to add new contact ***
 2.	When the user submits this data, the input should be validated against the following rules. Any validation errors should be presented to the user.
-    *	First Name cannot be empty (incomplete)
-    *	Last Name cannot be empty (incomplete)
+    *	First Name cannot be empty (complete)
+    *	Last Name cannot be empty (complete)
     *	Email must be a valid email address. (complete)
     * If all validation succeeds, a confirmation page should be displayed which tells the user the data was received by the system. (attempted but non-functional)
 3.	All data submitted in this way must be saved, but only for the duration of the application’s run. It does not need to survive a restart of the application. However, in your design consider that this application will ultimately have to save this data to a persistent datastore.
@@ -22,11 +22,11 @@ Requirements:
 5.	A REST endpoint must be provided to retrieve all mailing list entries. This endpoint should take 2 optional parameters:
 *** REST endpoint @ /api/contacts ***
 7.	Last name- if specified, only records with this last name are returned
-*** incomplete ***
-9.	Ascending/Descending flag which indicates how to sort records. If not specified, default behavior is to sort ascending. Records should be sorted by last name. Where last names are equal, records should be sorted by first name.
-*** incomplete ***
+*** complete ***
+9.	Ascending/Descending flag which indicates how to sort records. If not specified, the default behavior is to sort ascending. Records should be sorted by last name. Where last names are equal, records should be sorted by first name.
+*** complete ***
 11.	At least one automated test must be provided which tests one of your .net components.
-*** incomplete ***
+*** complete ***
 13.	Security is not required for this exercise.
 
 Optional:
