@@ -11,17 +11,23 @@ Requirements:
     *	Last Name
     *	First Name
     *	Email
+*** Completed by adding a add view with simple form to add new contact ***
 2.	When the user submits this data, the input should be validated against the following rules. Any validation errors should be presented to the user.
-    *	First Name cannot be empty
-    *	Last Name cannot be empty
-    *	Email must be a valid email address.
-    * If all validation succeeds, a confirmation page should be displayed which tells the user the data was received by the system.
+    *	First Name cannot be empty (incomplete)
+    *	Last Name cannot be empty (incomplete)
+    *	Email must be a valid email address. (complete)
+    * If all validation succeeds, a confirmation page should be displayed which tells the user the data was received by the system. (attempted but non-functional)
 3.	All data submitted in this way must be saved, but only for the duration of the application’s run. It does not need to survive a restart of the application. However, in your design consider that this application will ultimately have to save this data to a persistent datastore.
-4.	A REST endpoint must be provided to retrieve all mailing list entries. This endpoint should take 2 optional parameters:
-5.	Last name- if specified, only records with this last name are returned
-6.	Ascending/Descending flag which indicates how to sort records. If not specified, default behavior is to sort ascending. Records should be sorted by last name. Where last names are equal, records should be sorted by first name.
-7.	At least one automated test must be provided which tests one of your .net components.
-8.	Security is not required for this exercise.
+*** Completed using EF Core and On-Memory DB ***
+5.	A REST endpoint must be provided to retrieve all mailing list entries. This endpoint should take 2 optional parameters:
+*** REST endpoint @ /api/contacts ***
+7.	Last name- if specified, only records with this last name are returned
+*** incomplete ***
+9.	Ascending/Descending flag which indicates how to sort records. If not specified, default behavior is to sort ascending. Records should be sorted by last name. Where last names are equal, records should be sorted by first name.
+*** incomplete ***
+11.	At least one automated test must be provided which tests one of your .net components.
+*** incomplete ***
+13.	Security is not required for this exercise.
 
 Optional:
 
