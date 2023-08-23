@@ -741,11 +741,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ntrujillo/Projects/Mailing-List-App/ClarkCodingChallenge/ClarkCodingChallenge.csproj",
-      "projectName": "ClarkCodingChallenge",
-      "projectPath": "/Users/ntrujillo/Projects/Mailing-List-App/ClarkCodingChallenge/ClarkCodingChallenge.csproj",
+      "projectUniqueName": "/Users/ntrujillo/Projects/Personal - C/Mailing-List-App/ClarkCodingChallenge/MailingList.csproj",
+      "projectName": "MailingList",
+      "projectPath": "/Users/ntrujillo/Projects/Personal - C/Mailing-List-App/ClarkCodingChallenge/MailingList.csproj",
       "packagesPath": "/Users/ntrujillo/.nuget/packages/",
-      "outputPath": "/Users/ntrujillo/Projects/Mailing-List-App/ClarkCodingChallenge/obj/",
+      "outputPath": "/Users/ntrujillo/Projects/Personal - C/Mailing-List-App/ClarkCodingChallenge/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ntrujillo/.nuget/NuGet/NuGet.Config"

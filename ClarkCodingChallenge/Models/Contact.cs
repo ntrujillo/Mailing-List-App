@@ -1,14 +1,19 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace ClarkCodingChallenge.Models
+namespace MailingList.Models
 {
 	public class Contact
 	{
-		// excluding ID for simplicity sake since functionality doesn't require it
-		public string FirstName { get; set; }
-		public string LastName { get; set; }
+        [Required]
+        [RegularExpression(@"^\S*$", ErrorMessage = "Whitespace is not allowed.")]
+        public string FirstName { get; set; }
+        [Required]
+        [RegularExpression(@"^\S*$", ErrorMessage = "Whitespace is not allowed.")]
+        public string LastName { get; set; }
         [Key]
+        [Required]
+        [RegularExpression(@"^\S*$", ErrorMessage = "Whitespace is not allowed.")]
         public string Email { get; set; }
 	}
 }

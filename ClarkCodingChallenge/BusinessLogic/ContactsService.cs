@@ -1,4 +1,4 @@
-﻿namespace ClarkCodingChallenge.BusinessLogic
+﻿namespace MailingList.BusinessLogic
 {
     public class ContactsService
     {

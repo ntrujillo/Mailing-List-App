@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace ClarkCodingChallenge.Tests.BusinessLogicTests
+namespace MailingList.Tests.BusinessLogicTests
 {
     [TestClass]
     public class ContactsBusinessLogicTests

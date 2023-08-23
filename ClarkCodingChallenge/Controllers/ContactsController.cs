@@ -1,55 +1,65 @@
 ﻿using System.Diagnostics;
+using System.Collections.Generic;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using ClarkCodingChallenge.Models;
-using ClarkCodingChallenge.DataAccess;
+using MailingList.Models;
+using MailingList.DataAccess;
 
-namespace ClarkCodingChallenge.Controllers
+
+namespace MailingList.Controllers
 {
     public class ContactsController : Controller
     {
-        private readonly ContactsDataAccess _context;
+        private readonly MailingListContext _context;
 
-        public ContactsController(ContactsDataAccess context)
+        public ContactsController(MailingListContext context)
         {
             _context = context;
         }
 
+        /* Index (Home) */
         public IActionResult Index()
         {
-            return View();
+            List<Contact> contacts = _context.Contacts.ToList(); // Retrieve all contacts
+            return View(contacts); // Pass the list of contacts to the view
         }
 
+        /* View Create Form */
         [HttpGet]
-        public IActionResult Add()
+        public IActionResult Create()
         {
             return View();
         }
 
+        /* Submit Create Form */
         [HttpPost]
-        public IActionResult Add(Contact addContactRequest)
+        public IActionResult Create(Contact createContactRequest)
         {
-            if (addContactRequest != null)
+            /* check that model binding had completed successfulyl */
+            if (createContactRequest != null && ModelState.IsValid)
             {
-                var contactInDb = _context.Contacts.Find(addContactRequest.Email);
 
-                // check that entry hasn't been made already
+                /* ensure contact doesn't already exist */
+                var contactInDb = _context.Contacts.Find(createContactRequest.Email);
                 if (contactInDb == null)
                 {
-                    _context.Contacts.Add(addContactRequest);
+                    /* Contact successfully created */
+                    _context.Contacts.Add(createContactRequest);
                     _context.SaveChanges();
-                    TempData["AlertMessage"] = "Successfully created contact!";
-                    return RedirectToAction("Index");
+                    TempData["AlertMessage"] = "Successfuly Created Contact!";
+                    return View();
                 }
                 else
                 {
-                    TempData["AlertMessage"] = "Contact already exists.";
-                    return View();
+                    /* Contact already exists */
+                    ModelState.AddModelError(nameof(Contact.Email), "Contact Email Already Exists!");
+                    return View(createContactRequest);
                 }
 
             } else
             {
-                TempData["AlertMessage"] = "Invalid contact.";
-                return View();
+                /* Model is not valid */
+                return View(createContactRequest);
             }
         }
 

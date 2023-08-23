@@ -7,9 +7,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 using Microsoft.EntityFrameworkCore;
-using ClarkCodingChallenge.DataAccess;
+using MailingList.DataAccess;
 
-namespace ClarkCodingChallenge
+namespace MailingList
 {
     public class Startup
     {
@@ -33,8 +33,8 @@ namespace ClarkCodingChallenge
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
             // create database
-            services.AddDbContext<ContactsDataAccess>
-                (opt => opt.UseInMemoryDatabase("ContactsDb"));
+            services.AddDbContext<MailingListContext>
+                (opt => opt.UseInMemoryDatabase("MailingListDb"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

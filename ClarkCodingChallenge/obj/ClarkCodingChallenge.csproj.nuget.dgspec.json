@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ntrujillo/Projects/Mailing-List-App/ClarkCodingChallenge/ClarkCodingChallenge.csproj": {}
+    "/Users/ntrujillo/Projects/Personal - C/Mailing-List-App/ClarkCodingChallenge/ClarkCodingChallenge.csproj": {}
   },
   "projects": {
-    "/Users/ntrujillo/Projects/Mailing-List-App/ClarkCodingChallenge/ClarkCodingChallenge.csproj": {
+    "/Users/ntrujillo/Projects/Personal - C/Mailing-List-App/ClarkCodingChallenge/ClarkCodingChallenge.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ntrujillo/Projects/Mailing-List-App/ClarkCodingChallenge/ClarkCodingChallenge.csproj",
+        "projectUniqueName": "/Users/ntrujillo/Projects/Personal - C/Mailing-List-App/ClarkCodingChallenge/ClarkCodingChallenge.csproj",
         "projectName": "ClarkCodingChallenge",
-        "projectPath": "/Users/ntrujillo/Projects/Mailing-List-App/ClarkCodingChallenge/ClarkCodingChallenge.csproj",
+        "projectPath": "/Users/ntrujillo/Projects/Personal - C/Mailing-List-App/ClarkCodingChallenge/ClarkCodingChallenge.csproj",
         "packagesPath": "/Users/ntrujillo/.nuget/packages/",
-        "outputPath": "/Users/ntrujillo/Projects/Mailing-List-App/ClarkCodingChallenge/obj/",
+        "outputPath": "/Users/ntrujillo/Projects/Personal - C/Mailing-List-App/ClarkCodingChallenge/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ntrujillo/.nuget/NuGet/NuGet.Config"

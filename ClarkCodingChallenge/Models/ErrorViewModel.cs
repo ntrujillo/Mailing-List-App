@@ -1,4 +1,4 @@
-namespace ClarkCodingChallenge.Models
+namespace MailingList.Models
 {
     public class ErrorViewModel
     {

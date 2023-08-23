@@ -1,0 +1,23 @@
+﻿@model MailingList.Models.Contact
+@{
+    ViewData["Title"] = "Create Contact";
+}
+
+<h1>Create Contact</h1>
+<form method="post" action="Create">
+
+    <label for="FirstName">First Name:</label><br />
+    <input type="text" asp-for="FirstName"><br />
+    <span asp-validation-for="FirstName" class="text-danger"></span><br />
+
+    <label for="LastName">Last Name:</label><br />
+    <input type="text" asp-for="LastName"><br />
+    <span asp-validation-for="LastName" class="text-danger"></span><br />
+
+    <label asp-for="Email">Email:</label><br />
+    <input type="email" asp-for="Email"><br />
+    <span asp-validation-for="Email" class="text-danger"></span><br />
+
+    <button type="submit">Submit</button><br />
+
+</form>

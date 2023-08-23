@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29102.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClarkCodingChallenge", "ClarkCodingChallenge\ClarkCodingChallenge.csproj", "{B2D62ECE-1CDD-4CAD-AF29-F456737C9AE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailingList", "ClarkCodingChallenge\MailingList.csproj", "{B2D62ECE-1CDD-4CAD-AF29-F456737C9AE8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClarkCodingChallenge.Tests", "ClarkCodingChallenge.Tests\ClarkCodingChallenge.Tests.csproj", "{8EDCAD28-CED3-4213-8773-42D5057E4FC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MailingList.Tests", "ClarkCodingChallenge.Tests\MailingList.Tests.csproj", "{8EDCAD28-CED3-4213-8773-42D5057E4FC2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
