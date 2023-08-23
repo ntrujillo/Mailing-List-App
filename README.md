@@ -22,9 +22,9 @@ Requirements:
 5.	A REST endpoint must be provided to retrieve all mailing list entries. This endpoint should take 2 optional parameters:
 *** REST endpoint @ /api/contacts ***
 7.	Last name- if specified, only records with this last name are returned
-*** complete ***
+*** complete using key lastName=string ***
 9.	Ascending/Descending flag which indicates how to sort records. If not specified, the default behavior is to sort ascending. Records should be sorted by last name. Where last names are equal, records should be sorted by first name.
-*** complete ***
+*** complete using key descending=bool ***
 11.	At least one automated test must be provided which tests one of your .net components.
 *** complete ***
 13.	Security is not required for this exercise.
